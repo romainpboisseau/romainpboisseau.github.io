@@ -1,0 +1,133 @@
+/* Force the masthead (top bar) to use a solid color */
+.masthead {
+  background-color: #9caf88 !important; /* dark green example */
+  color: #9caf88 !important;
+}
+
+.greedy-nav {
+    background: transparent !important;
+}
+
+.greedy-nav .visible-links a {
+    color: #fff !important;
+}
+
+.greedy-nav .site-title {
+    color: #fff !important;
+}
+
+.greedy-nav .visible-links a::before {
+    background: #fff !important; /* change from grey to white */
+}
+
+.page__footer-follow {
+    display: none;
+}
+
+.sidebar .author__avatar img {
+  width: 250px !important;       /* set width */
+  height: auto !important;       /* height scales automatically */
+  border-radius: 50% !important; /* will clip to circle only if width=height, otherwise oval */
+  display: block !important;
+  margin: 0 auto !important;
+  max-width: none !important;
+}
+
+
+.sidebar {
+  @include breakpoint($large) {
+    float: inline-start;
+    opacity: 1 !important;  // remove transparency entirely
+    -webkit-transition: none !important;
+    transition: none !important;
+
+    &:hover {
+      opacity: 1 !important; // no hover effect
+    }
+  }
+}
+
+.page__footer {
+    background-color: #e5e5e5;
+    color: #3d4144; /* optional: makes the text white for contrast */
+    text-align: center; /* optional: center the text */
+    padding: 1rem 0; /* optional: add some spacing */
+}
+
+.page__footer a {
+    color: #fff; /* keep links white */
+    text-decoration: none; /* optional: remove underline */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  display: block;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 0;
+  padding: 1rem;
+  background: #f2a775;
+  color: #fff;
+  font-weight: 600;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.project-card {
+  display: block;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none !important;
+  border: none !important;
+}
+
+.project-card h3 {
+  margin: 0;
+  padding: 0.5rem;
+  background: rgba(242, 167, 117, 0.8);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+  border: none !important;
+}
+
+.project-card:hover,
+.project-card:focus,
+.project-card:active {
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 1rem; /* adjust spacing as needed */
+}
