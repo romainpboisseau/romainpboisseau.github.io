@@ -160,7 +160,7 @@ permalink: /research/
   <div class="project-gallery" style="display:flex;gap:1rem;padding:1rem;width:100%;justify-content:space-between;margin-top:-3rem;">
 <figure style="flex:1 1 48%;border-radius:8px;">
       <img src="{{ '/assets/images/convergence_images.png' | relative_url }}" alt="wingbuds" style="width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-      <figcaption style="text-align:center;font-size:0.9rem;color:#666;margin-top:-1rem;">Examples of repeated convergent evolution in stick insects. White arrow: head. Orange arrow: tip of abdomen.</figcaption>
+      <figcaption style="text-align:center;font-size:0.9rem;color:#666;margin-top:-1rem;">Examples of repeated morphological evolution in stick insects. White arrow: head. Orange arrow: tip of abdomen.</figcaption>
     </figure>
   </div>
 </section>

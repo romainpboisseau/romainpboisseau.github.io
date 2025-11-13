@@ -141,7 +141,7 @@ permalink: /people/
     
     <!-- Image on the left -->
     <div class="person-image" style="flex:0 0 200px; max-width:200px; margin-right:1.5rem;">
-      <img src="{{ '/assets/images/Lexi.jpg' | relative_url }}" 
+      <img src="{{ '/assets/images/lexi.jpg' | relative_url }}" 
            alt="Lexi Klawitter"
            style="width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
     </div>
@@ -294,7 +294,7 @@ permalink: /people/
     
     <!-- Image on the left -->
     <div class="person-image" style="flex:0 0 200px; max-width:200px; margin-right:1.5rem;">
-      <img src="{{ '/assets/images/Kate.jpg' | relative_url }}" 
+      <img src="{{ '/assets/images/kate.jpg' | relative_url }}" 
            alt="Kate Barry"
            style="width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
     </div>
