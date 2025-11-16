@@ -9,16 +9,16 @@ permalink: /research/
      Intro Section
 ========================= -->
 <section class="research-intro" style="max-width:800px;margin:auto;text-align:justify;">
-  <p>How has the diversity of life forms come to be? This central question in evolutionary biology can be addressed at different scales: by studying the processes that drive modifications within populations of organisms (microevolution), or by investigating patterns of changes on the tree of life (macroevolution). I address this question from both angles to provide insights into the ultimate and proximate drivers of morphological and behavioral diversity. In this endeavour, I have notably been focusing on the evolution of sexual dimorphism and sexually selected weapons in many different arthropod systems.</p>
+  <p>How has the diversity of life forms come to be? This central question in evolutionary biology can be addressed at different scales: by studying the processes that drive modifications within populations of organisms (microevolution), or by investigating patterns of changes on the tree of life (macroevolution). I address this question from both angles to provide insights into the ultimate and proximate drivers of morphological and behavioral diversity. In this endeavor, I have especially been focusing on the evolution of sexual dimorphism and sexually selected weapons in many different arthropod systems.</p>
 
   <p>One of my major interests is to study cases of repeated evolution from the phenotypic to the molecular level (<i>i.e.</i>, gene reuse). Why do similar traits evolve repeatedly in different lineages? What is the role of selection and constraints? What are the factors affecting the likelihood of repeated evolution? Are they similar across levels? Stick insects (insect order Phasmatodea) are an ideal system to study these question as they display an incredible morphological diversity with many different traits evolving independently in different corners of the world. 
   </p>
 
-  <p>Below, you will find details about my past and on-going projects. Do not hesitate to reach out with questions!
+  <p>Below, you will find details about my past and ongoing projects. Do not hesitate to reach out with questions!
   </p>
 </section>
 
-<h2 style="text-align: center;"><strong>On-going projects</strong></h2>
+<h2 style="text-align: center;"><strong>Ongoing projects</strong></h2>
 
 <!-- ========================
      Project Wings
@@ -30,7 +30,7 @@ permalink: /research/
 
   <div class="project-text" style="flex:2 1 400px;padding:1rem;text-align: justify;">
     <h2>Repeated evolution at the gene expression level - <br> Study of repeated wing losses in stick insects</h2>
-    <p>Many lineages of stick insects have independently lost their wings. While very common in insects, the molecular mechanisms underlying wing loss and the extent to which these occurrences involve similar changes at the molecular level (e.g., reuse the same genes) remains unknown. During my postdoc at the University of Lausanne (2023-now), I am leveraging this system to study the effect of divergence time between convergent lineages on the propensity to reuse the same molecular mechanisms. This project is supported by an <a href="https://data.snf.ch/grants/grant/224313" target="_blank" style="color:#f2a775; text-decoration: none;">SNSF postdoctoral fellowship </a> (<a href="https://www.snf.ch/en/m1NtWp4nTELQixlu/funding/horizon-europe-swiss-postdoctoral-fellowships" target="_blank" style="color:#f2a775; text-decoration: none;">Swiss equivalent</a> to the European MSCA Fellowship). </p>
+    <p>Many lineages of stick insects have independently lost their wings. While very common in insects, the molecular mechanisms underlying wing loss and the extent to which these occurrences involve similar changes at the molecular level (e.g., reuse the same genes) remain unknown. During my postdoc at the University of Lausanne (2023-now), I am leveraging this system to study the effect of divergence time between convergent lineages on the propensity to reuse the same molecular mechanisms. This project is supported by an <a href="https://data.snf.ch/grants/grant/224313" target="_blank" style="color:#f2a775; text-decoration: none;">SNSF postdoctoral fellowship </a> (<a href="https://www.snf.ch/en/m1NtWp4nTELQixlu/funding/horizon-europe-swiss-postdoctoral-fellowships" target="_blank" style="color:#f2a775; text-decoration: none;">Swiss equivalent</a> to the European MSCA Fellowship). </p>
   </div>
 
 <div class="project-gallery" style="display:flex;gap:1rem;padding:1rem;width:100%;justify-content:space-between;margin-top:-3rem;">
@@ -60,7 +60,7 @@ permalink: /research/
 
   <div class="project-text" style="flex:2 1 400px;padding:1rem;text-align: justify;">
     <h2>Macroevolution of Parthenogenesis</h2>
-    <p>Parthenogenesis, where females develop from unfertilized eggs, has independently evolved hundreds (if not thousands) of times across insects. However, the factors that drive the loss of males in lineages are not well understood. We are currently (2024-now) investigating these factors (<i>e.g.</i>, loss of flight, environmental factors...) in stick insects which is the insect order with the highest prevalence of parthenogenesis.
+    <p>Parthenogenesis, where females develop from unfertilized eggs, has independently evolved hundreds, if not thousands, of times across insects. However, the factors that drive the loss of males in lineages are not well understood. We are currently (2024-now) investigating these factors (<i>e.g.</i>, loss of flight, environmental factors...) in stick insects which is the insect order with the highest prevalence of parthenogenesis.
     </p>
   </div>
 </section>
@@ -79,7 +79,7 @@ permalink: /research/
 
   <div class="project-text" style="flex:2 1 400px;padding:1rem;text-align: justify;">
     <h2>Macroevolution of Sexual Dimorphism<br> in Body Morphology</h2>
-    <p>Morphological differences between males and females are very variable across animals. We are investigating the ecological, environmental, life history and behavioral factors affecting this diversity. Stick and leaf insects are a great model to study this question as, across species, males go from being roughly the same size as females to being more than 10 times smaller. A first version of this project, started in 2018, can be read in my <a href="{{ '/assets/pdfs/Dissertation_RomainBoisseau.pdf' | relative_url }}" target="_blank" style="color:#e67e22; text-decoration:none;">
+    <p>Morphological differences between males and females are very variable across animals. We are investigating the ecological, environmental, life-history and behavioral factors affecting this diversity. Stick and leaf insects are a great model to study this question as, across species, males go from being roughly the same size as females to being more than 10 times smaller. A first version of this project, started in 2018, can be read in my <a href="{{ '/assets/pdfs/Dissertation_RomainBoisseau.pdf' | relative_url }}" target="_blank" style="color:#e67e22; text-decoration:none;">
         PhD dissertation
       </a> (Chapter 2). 
     </p>
@@ -100,7 +100,7 @@ permalink: /research/
   <div class="project-text" style="flex:2 1 400px;padding:1rem;text-align: justify;">
     <h2>Evolution of Exaggerated Hindlegs in New Guinean Thorny Devil Stick Insects</h2>
     <p>Most sexually selected weapons scale hyperallometrically with body size, meaning that larger individuals develop disproportionately larger or more elaborate versions, exaggerating differences among rivals. Yet some weapons do not follow this pattern, and why scaling varies remains poorly understood. This situation happens in the thorny devil stick insect (<i>Eurycantha calcarata</i>), where males possess greatly enlarged hindlegs used in male–male contests that scale proportionately with body size. During my PhD, I investigated the natural history of this genus in Papua New Guinea (funded by a <a href="https://www.nationalgeographic.org/society/grants-and-investments/
-    " target="_blank" style="color:#f2a775; text-decoration: none;">National Geographic Society Young Explorer Grant</a>), contest resolution and dynamics in the lab as well as the costs of these weapons. Some of this work has already been <a href="https://www.sciencedirect.com/science/article/pii/S0376635720304563" target="_blank" style="color:#f2a775; text-decoration: none;">published</a> and highlighted in <a href="https://www.science.org/content/article/thorny-devils-grow-giant-legs-pin-rivals" target="_blank" style="color:#f2a775; text-decoration: none;">Science</a> but there is more to come! 
+    " target="_blank" style="color:#f2a775; text-decoration: none;">National Geographic Society Young Explorer Grant</a>), contest resolution and dynamics in the lab, as well as the costs of these weapons. Some of this work has already been <a href="https://www.sciencedirect.com/science/article/pii/S0376635720304563" target="_blank" style="color:#f2a775; text-decoration: none;">published</a> and highlighted in <a href="https://www.science.org/content/article/thorny-devils-grow-giant-legs-pin-rivals" target="_blank" style="color:#f2a775; text-decoration: none;">Science</a> but there is more to come! 
     </p>
   </div>
   <div class="project-gallery" style="display:flex;gap:1rem;padding:1rem;width:100%;justify-content:space-between;margin-top:-3rem;">
@@ -153,7 +153,7 @@ permalink: /research/
   <div class="project-text" style="flex:2 1 400px;padding:1rem;text-align: justify;">
     <h2>Repeated evolution at the phenotypic level -<br>
     Repeated morphological evolution in stick insects</h2>
-    <p>Independent evolution of similar traits in lineages inhabiting similar environments (convergent or repeated evolution) is rarely perfect. Environment and selective pressures may not be as similar as they appear, and responses to selection are contingent upon available genetic variation, genetic background and developmental mechanisms. Studying many instances of repeated morphological evolution in stick insects, we showed that the similarity of environmental conditions experienced by the organisms --the closeness of the invaded niches-- and the extent of elapsed time since divergence, both predict the strength of morphological convergence. The phasmid radiation reveals an evolutionary process that is surprisingly predictable, even when lineages have been evolving independently for tens of millions of years. This study started during my PhD (2018) and was published in <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2319485121" target="_blank" style="color:#f2a775; text-decoration: none;">PNAS</a> in 2025.
+    <p>Independent evolution of similar traits in lineages inhabiting similar environments (i.e., convergent or repeated evolution) is rarely perfect. Environment and selective pressures may not be as similar as they appear, and responses to selection are contingent upon available genetic variation, genetic background and developmental mechanisms. Studying many instances of repeated morphological evolution in stick insects, we showed that the similarity of environmental conditions experienced by the organisms — the closeness of the invaded niches — and the extent of elapsed time since divergence, both predict the strength of morphological convergence. The phasmid radiation reveals an evolutionary process that is surprisingly predictable, even when lineages have been evolving independently for tens of millions of years. This study started during my PhD (2018) and was published in <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2319485121" target="_blank" style="color:#f2a775; text-decoration: none;">PNAS</a> in 2025.
     </p>
   </div>
 
@@ -301,7 +301,7 @@ permalink: /research/
   </div>
 
   <div class="project-text" style="flex:2 1 400px;padding:1rem;text-align: justify;">
-    <h2>Metabolic costs of fighting and ovipsoition in parasitic wasps</h2>
+    <h2>Metabolic costs of fighting and oviposition in parasitic wasps</h2>
     <p>Accessing and exploiting oviposition sites can be energetically costly for female parasitic wasps, especially when competitors are present. We measured the metabolic costs of fighting and drilling into seeds in the seed-drilling wasp <i>Eupelmus vuilleti</i> to better understand their reproductive strategies and the occurrence of superparasitism — when females lay eggs in hosts that are already parasitized, leading to larval competition. This study (published in 2017) was reported in <a href="https://journals.biologists.com/jeb/article/220/21/3955/33738/The-metabolic-costs-of-fighting-and-host" target="_blank" style="color:#f2a775; text-decoration: none;">Journal of Experimental Biology</a> and featured in <a href="https://journals.biologists.com/jeb/article/220/21/3837/33764/Superparasitism-is-a-price-worth-paying-for" target="_blank" style="color:#f2a775; text-decoration: none;">Inside JEB</a>. 
     </p>
   </div>
@@ -320,7 +320,7 @@ permalink: /research/
 
   <div class="project-text" style="flex:2 1 400px;padding:1rem;text-align: justify;">
     <h2>Learning in slime molds</h2>
-    <p>Learning is typically associated with animals that have nervous systems, but non-neural organisms may also possess this ability. We showed that the slime mold <i>Physarum polycephalum</i> can exhibit habituation—a simple form of learning—by learning to ignore repeated chemical stimuli and responding again after a delay. This study (published in 2016) appeared in 
+    <p>Learning is typically associated with animals that have nervous systems, but non-neural organisms may also possess this ability. We showed that the slime mold <i>Physarum polycephalum</i> can exhibit habituation — a simple form of learning—by learning to ignore repeated chemical stimuli and responding again after a delay. This study (published in 2016) appeared in 
 <a href="https://doi.org/10.1098/rspb.2016.0446" target="_blank" style="color:#f2a775; text-decoration: none;">Proceedings of the Royal Society B</a> 
 and was then featured in many different news outlets, including 
 <a href="https://www.latimes.com/science/sciencenow/la-sci-sn-slime-mold-brain-learning-20160426-story.html" target="_blank" style="color:#f2a775; text-decoration: none;">Los Angeles Times</a>, 
@@ -362,7 +362,7 @@ and was then featured in many different news outlets, including
   </div>
 
   <div class="project-text" style="flex:2 1 400px;padding:1rem;text-align: justify;">
-    <h2>Fitness consequences of different types of cannibalism in widow spiders</h2>
+    <h2>Predation and fitness landscapes in polymorphic <i>Heliconius</i> butterflies</h2>
     <p>Polymorphic mimicry allows some species to display multiple adaptive color patterns, but intermediate phenotypes can fall into “fitness valleys” with higher predation risk. We tested how predators shape these fitness landscapes using over 5,000 artificial butterflies mimicking the polymorphic Müllerian mimic <i>Heliconius numata</i>, examining predation on homozygous, heterozygous, and exotic color patterns in the field in Peru. This study (published in 2016) appeared in <a href="https://doi.org/10.1098/rspb.2016.0391" target="_blank" style="color:#f2a775; text-decoration: none;">Proceedings of the Royal Society B</a>.
     </p>
   </div>

@@ -20,7 +20,7 @@ permalink: /teaching-outreach/
 
     <li style="margin-bottom:1rem;">
       <strong>Guest lecturer:</strong><br>
-      <em>Invertebrate faunistics</em> — 4h, ~30 students (2023-25)  
+      <em>Invertebrate faunistics</em> — 4 lectures/year, ~30 students (2023-25)  
     </li>
 
   </ul>
@@ -34,7 +34,7 @@ permalink: /teaching-outreach/
     <li style="margin-bottom:1rem;">
       <strong>Principal Instructor / Lecturer:</strong><br>
       <em>Entomology (BIOO 462)</em> — 4 CR, 35 students (2020)  
-      <a href="{{ '/assets/pdfs/entomology_syllabus.pdf' | relative_url }}" target="_blank" style="color:#e67e22; text-decoration:none;">
+      <a href="{{ '/assets/pdfs/Syllabus_Entomology_2020.pdf' | relative_url }}" target="_blank" style="color:#e67e22; text-decoration:none;">
         [Syllabus]
       </a>
     </li>
@@ -42,23 +42,23 @@ permalink: /teaching-outreach/
     <li style="margin-bottom:1rem;">
       <strong>Teaching Assistant:</strong><br>
       <em>Behavior and Evolution (BIOE 406/409)</em> — 4 CR, 60 students (2019)  
-      <a href="{{ '/assets/pdfs/behavior_evolution_syllabus.pdf' | relative_url }}" target="_blank" style="color:#e67e22; text-decoration:none;">
+      <a href="{{ '/assets/pdfs/Syllabus_BIOE406_2019.pdf' | relative_url }}" target="_blank" style="color:#e67e22; text-decoration:none;">
         [Syllabus]
       </a>
     </li>
 
     <li style="margin-bottom:1rem;">
       <strong>Teaching Assistant:</strong><br>
-      <em>Genetics and Evolution (BIOB 272)</em> — 4 CR, ~220 students (2017, 2018, 2019)  
-      <a href="{{ '/assets/pdfs/genetics_evolution_syllabus.pdf' | relative_url }}" target="_blank" style="color:#e67e22; text-decoration:none;">
+      <em>Genetics and Evolution (BIOB 272)</em> — 4 CR, ~220 students (2017, 2018, 2019, 2021)  
+      <a href="{{ '/assets/pdfs/2021_Syllabus_BIOB_272.pdf' | relative_url }}" target="_blank" style="color:#e67e22; text-decoration:none;">
         [Syllabus]
       </a>
     </li>
 
     <li style="margin-bottom:1rem;">
       <strong>Teaching Assistant:</strong><br>
-      <em>Principles of Living Systems (BIOB 160N)</em> — 4 CR, ~400 students (2016, 2017, 2018)  
-      <a href="{{ '/assets/pdfs/living_systems_syllabus.pdf' | relative_url }}" target="_blank" style="color:#e67e22; text-decoration:none;">
+      <em>Principles of Living Systems (BIOB 160N)</em> — 4 CR, ~400 students (2016, 2017, 2018, 2020, 2022)  
+      <a href="{{ '/assets/pdfs/BIOB161_lab_syllabus_2022.pdf' | relative_url }}" target="_blank" style="color:#e67e22; text-decoration:none;">
         [Syllabus]
       </a>
     </li>
@@ -73,7 +73,7 @@ permalink: /teaching-outreach/
 Evolutionary biology and genomics are at the heart of societal and economic challenges of this century. But public understanding of recent advances in these fields, including the benefits and risks, is lagging behind. I believe in the critical role of scientists to inform the general public and support evidence-based decision making.
 </p>
 <p>
-I love to engage in outreach events and to give tours of my insect breeding room to the general public. Many of the insects I study (e.g., stick insects, rhinoceros beetles) are incredibly charismatic so they have a great potential for grabbing attention and raising public awareness around these fields and invertebrate conservation.
+I love to engage in outreach events and to give tours of my insect breeding room to the general public. Many of the insects I study (e.g., stick insects, rhinoceros beetles) are incredibly charismatic so they have great potential to grab attention and raise public awareness around these fields and invertebrate conservation.
 </p> 
 
 <h2 style="margin-top:2rem; color:#444; border-bottom:2px solid #ddd; padding-bottom:0.3rem;">
@@ -118,7 +118,7 @@ Insectarium.</strong> Missoula, MT, USA (May 2019)<br>
     
     <li style="margin-bottom:1rem;">
       <strong> Early development of the <a href="https://www.bigbiology.org/" target="_blank" style="color:#f2a775; text-decoration: none;">Big Biology podcast</a></strong> (2018)<br>
-      <em>Part of the early team developping this podcast alongside the hosts Art Woods and Marty Martin</em> — Episode editing and website construction and management. I even designed the logo!
+      <em>Part of the early team developing this podcast alongside the hosts Art Woods and Marty Martin</em> — Episode editing and website construction and management. I even designed the logo!
     </li>
 
     <img src="{{ '/assets/images/bigbiology.png' | relative_url }}"

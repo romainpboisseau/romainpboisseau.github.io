@@ -32,7 +32,7 @@ permalink: /people/
       <h3 style="margin-top:0;">Romain Boisseau</h3>
       <p>
          I am currently a postdoctoral fellow in the Department of Ecology and Evolution at the University of Lausanne (Switzerland), advised by Tanja Schwander, with support from the SNSF Swiss Postdoctoral Fellowship. Before this, I completed my PhD at the University of Montana (USA) under the supervision of Doug Emlen. Prior to Montana, I studied biology at the École Normale Supérieure in Paris (France) and earned a master’s degree in Ecology, Biodiversity, and Evolution, which included several research projects around the world.<br>
-         <a href="{{ '/assets/pdfs/Romain_Boisseau_CV.pdf' | relative_url }}" target="_blank" style="color:#f2a775; font-weight:bold;">CV</a>
+         <a href="{{ '/assets/pdfs/CV_RomainBoisseau_Nov2025.pdf' | relative_url }}" target="_blank" style="color:#f2a775; font-weight:bold;">CV</a>
       </p>
     </div>
 
@@ -53,7 +53,7 @@ permalink: /people/
     <div class="person-text" style="flex:1; min-width:200px;">
       <h3 style="margin-top:0;">Margherita Zgheib</h3>
       <p>
-        Margherita is a BEC (Behaviour, Evolution and Conservation) master student at the University of Lausanne. She received a BA in biology from the University of ?. Her research aims at linking the variation in mate guarding behaviors seen across species of stick insects to sperm precedence patterns.
+        Margherita is a Behaviour, Evolution and Conservation (BEC) master student at the University of Lausanne. She received a BA in biology from the Lebanese American University in Beirut (Lebanon). Her research aims at linking the variation in mate guarding behaviors seen across species of stick insects to sperm precedence patterns.
       </p>
     </div>
 
@@ -93,7 +93,7 @@ permalink: /people/
     <div class="person-text" style="flex:1; min-width:200px;">
       <h3 style="margin-top:0;">Madeline Kleeman</h3>
       <p>
-        Madeline was an undergraduate student at the University of Montana who worked on male male competition in leaf insects. She is now a museum interpreter and naturalist at the Missoula Butterfly House and Insectarium.
+        Madeline was an undergraduate student at the University of Montana who worked on male-male competition in leaf insects. She is now a museum interpreter and naturalist at the Missoula Butterfly House and Insectarium.
       </p>
     </div>
 
@@ -192,7 +192,7 @@ permalink: /people/
     <div class="person-text" style="flex:1; min-width:200px;">
       <h3 style="margin-top:0;">Tanja Schwander</h3>
       <p>
-        Tanja is a Professor at the University of Lausanne. Her research mainly focuses on the evolution of reproductive systems in animals (sexual reproduction, parthenogenesis...), notably using stick insects. I joined <a href="https://www.unil.ch/dee/en/home/menuinst/research/research-groups/schwander-group.html" target="_blank" style="color:#f2a775; text-decoration: none;">Tanja's group</a> in 2023 to carry out my project on the evolution of convergent wing phenotypes in stick insects. In parallel, we work together on the macroevolutionary drivers of parthenogenesis.
+        Tanja is a Professor at the University of Lausanne. Her research mainly focuses on the evolution of reproductive systems in animals (e.g., sexual reproduction, parthenogenesis), notably using stick insects. I joined <a href="https://www.unil.ch/dee/en/home/menuinst/research/research-groups/schwander-group.html" target="_blank" style="color:#f2a775; text-decoration: none;">Tanja's group</a> in 2023 to carry out my project on the evolution of convergent wing phenotypes in stick insects. In parallel, we work together on the macroevolutionary drivers of parthenogenesis.
       </p>
     </div>
 
@@ -230,7 +230,7 @@ permalink: /people/
     <div class="person-text" style="flex:1; min-width:200px;">
       <h3 style="margin-top:0;">Marlène Goubault-Body</h3>
       <p>
-        Marlène is a professor at the Research Institure on Insect Biology (IRBI) at the University of Tours (France). Her research focuses on animal conflicts and game theory. I joined <a href="https://irbi.univ-tours.fr/english-version/research/group-2-esore" target="_blank" style="color:#f2a775; text-decoration: none;">Marlène's team</a> in 2016 to complete a master's project on the physiological costs of fighting in parasitic wasps.
+        Marlène is a professor at the Research Institute on Insect Biology (IRBI) at the University of Tours (France). Her research focuses on animal conflicts and game theory. I joined <a href="https://irbi.univ-tours.fr/english-version/research/group-2-esore" target="_blank" style="color:#f2a775; text-decoration: none;">Marlène's team</a> in 2016 to complete a master's project on the physiological costs of fighting in parasitic wasps.
       </p>
 </div>
 </div>
@@ -303,7 +303,7 @@ permalink: /people/
     <div class="person-text" style="flex:1; min-width:200px;">
       <h3 style="margin-top:0;">Kate Barry</h3>
       <p>
-        Kate was a professor at Macquarie University, Sydney (Australia). Her research focused on the evolutionary outcome of reproductive conflict between and within the sexes. She has now quitted academia to become a functional medicine nutritionist. Kate co-supervised me with Shawn Wilder in 2014 on my project dealing with the fitness consequences of sexual cannibalism in redback spiders.
+        Kate was a professor at Macquarie University, Sydney (Australia). Her research focused on the evolutionary outcome of reproductive conflict between and within the sexes. She has now quit academia to become a functional medicine nutritionist. Kate co-supervised me with Shawn Wilder in 2014 on my project dealing with the fitness consequences of sexual cannibalism in redback spiders.
       </p>
 </div>
 </div>
@@ -436,7 +436,7 @@ permalink: /people/
     <div class="person-text" style="flex:1; min-width:200px;">
       <h3 style="margin-top:0;">Camille Thomas-Bulle</h3>
       <p>
-        Camille is my life partner and wife. Many of my accomplishments would not have been possible without her love and support. She is also an evolutionary biologist, interested in the evolution of weapons and adaptations to extreme environments from genomic, population genetics, and behavioral ecology perspectives. She is currently a bioinformatician in <a href="https://www.unil.ch/dee/en/home/menuinst/research/research-groups/schwander-group.html" target="_blank" style="color:#f2a775; text-decoration: none;">Tanja Schwnader's group</a>.
+        Camille is my life partner and wife. Many of my accomplishments would not have been possible without her love and support. She is also an evolutionary biologist, interested in the evolution of weapons and adaptations to extreme environments from genomic, population genetics, and behavioral ecology perspectives. She is currently a bioinformatician in <a href="https://www.unil.ch/dee/en/home/menuinst/research/research-groups/schwander-group.html" target="_blank" style="color:#f2a775; text-decoration: none;">Tanja Schwander's group</a>.
       </p>
     </div>
 

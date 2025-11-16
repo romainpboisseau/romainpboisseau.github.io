@@ -48,7 +48,7 @@ author_profile: true
   <li>
     Buescher, T. H., <strong>Boisseau, R. P.</strong>, & Brock, P. D. (2024).
     <a href="https://www.mapress.com/zt/article/view/zootaxa.5447.3.12" target="_blank">
-      <em>Junior homonomy warrants a replacement name for Ramulus lineatus (Liu & Cai, 1992) (Phasmatodea: Phasmatidae).</em>
+      <em>Junior homonymy warrants a replacement name for Ramulus lineatus (Liu & Cai, 1992) (Phasmatodea: Phasmatidae).</em>
     </a> <em>Zootaxa, 5447</em>(3), 449–450.
     <a href="{{ '/assets/pdfs/büscher-et-al-2024-Ramulus_lineatus.pdf' | relative_url }}" target="_blank" rel="noopener">
     <i class="fas fa-file-pdf" aria-hidden="true"></i>
