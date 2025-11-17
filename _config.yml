@@ -307,6 +307,8 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+    paths:
+      - sitemap.xml
 
 
 # Defaults
