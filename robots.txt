@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://romainpboisseau.github.io/sitemap.xml
