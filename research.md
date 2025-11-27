@@ -79,9 +79,9 @@ permalink: /research/
 
   <div class="project-text" style="flex:2 1 400px;padding:1rem;text-align: justify;">
     <h2>Macroevolution of Sexual Dimorphism<br> in Body Morphology</h2>
-    <p>Morphological differences between males and females are very variable across animals. We are investigating the ecological, environmental, life-history and behavioral factors affecting this diversity. Stick and leaf insects are a great model to study this question as, across species, males go from being roughly the same size as females to being more than 10 times smaller. A first version of this project, started in 2018, can be read in my <a href="{{ '/assets/pdfs/Dissertation_RomainBoisseau.pdf' | relative_url }}" target="_blank" style="color:#e67e22; text-decoration:none;">
-        PhD dissertation
-      </a> (Chapter 2). 
+    <p>Morphological differences between males and females are very variable across animals. We are investigating the ecological, environmental, life-history and behavioral factors affecting this diversity. Stick and leaf insects are a great model to study this question as, across species, males go from being roughly the same size as females to being more than 10 times smaller. A first version of this project, started in 2018, can be read <a href="{{ '/assets/pdfs/Boisseau et al. - 2025 - Sexual selection and flight as predictors of sexua.pdf' | relative_url }}" target="_blank" style="color:#e67e22; text-decoration:none;">
+       here
+      </a>. 
     </p>
   </div>
 </section>

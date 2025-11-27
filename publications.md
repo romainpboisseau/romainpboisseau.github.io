@@ -9,6 +9,26 @@ author_profile: true
 
 <ul class="pub-list">
   <li>
+    <strong>Boisseau, R. P.</strong>, Bradler, S., & Emlen, D. J. (2025).
+    <a href="https://www.biorxiv.org/content/10.1101/2025.11.25.690473v1" target="_blank">
+      <em>Sexual selection and flight as predictors of sexual size and shape dimorphism in stick and leaf insects.</em>
+    </a> <em>bioRxiv</em>.
+    <a href="{{ '/assets/pdfs/Boisseau et al. - 2025 - Sexual selection and flight as predictors of sexua.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+    </a>
+  </li>
+
+  <li>
+    <strong>Boisseau, R. P.</strong>, & Emlen, D. J. (2025).
+    <a href="https://www.biorxiv.org/content/10.1101/2025.11.21.689692v1" target="_blank">
+      <em>Exaggerated male hindlegs function as pure weapons of male–male combat in thorny devil stick insects.</em>
+    </a> <em>bioRxiv</em>.
+    <a href="{{ '/assets/pdfs/Boisseau et Emlen - 2025 - Exaggerated male hindlegs function as pure weapons.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+    </a>
+  </li>
+
+  <li>
     Schwander, T., Soldini, L., <strong>Boisseau, R. P.</strong>, Mérel, V., Toubiana, W. S., & Lavanchy, G. (2025)
     <a href="https://ecoevorxiv.org/repository/view/8766/" target="_blank">On the Repeated Evolution of Parthenogenesis in Stick Insects</a>.  
     <em>EcoEvoRxiv</em>.
