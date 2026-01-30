@@ -101,37 +101,77 @@ You can find more on
 </p>
 
 <script>
+  function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
   async function loadINatObservations() {
     const gallery = document.getElementById('inat-gallery');
+    gallery.innerHTML = '';
+
     let allResults = [];
 
-    for (let page = 1; page <= 3; page++) { // get 3 pages (3 × 30 = 90)
-      const response = await fetch(`https://api.inaturalist.org/v1/observations?user_id=romainpboisseau&order=desc&order_by=votes&per_page=30&page=${page}`);
+    for (let page = 1; page <= 4; page++) { // 4 × 30 = 120 → enough to pick 92
+      const response = await fetch(
+        `https://api.inaturalist.org/v1/observations?user_id=romainpboisseau&order=desc&order_by=votes&per_page=30&page=${page}`
+      );
       const data = await response.json();
       allResults = allResults.concat(data.results);
     }
 
-    allResults.forEach(obs => {
-      if (obs.photos && obs.photos.length > 0) {
-        const photoUrl = obs.photos[0].url.replace('square', 'large');
-        const obsLink = obs.uri;
-        const species = obs.species_guess || "Unknown species";
-        const location = obs.place_guess || "Unknown location";
+    // Remove duplicate observations (by obs.id)
+    const uniqueMap = new Map();
+    allResults.forEach(obs => uniqueMap.set(obs.id, obs));
+    allResults = Array.from(uniqueMap.values());
 
-        const card = document.createElement('div');
-        card.className = 'inat-card';
-        card.innerHTML = `
-          <img src="${photoUrl}" alt="${species}">
-          <div class="inat-meta">
-            <strong>${species}</strong>
-            <span>${location}</span>
-          </div>
-        `;
-        card.onclick = () => window.open(obsLink, '_blank');
-        gallery.appendChild(card);
-      }
+
+    // Keep only observations with photos
+    allResults = allResults.filter(
+      obs => obs.photos && obs.photos.length > 0
+    );
+
+    // Correct favorite count field
+    const twoStarsPlus = allResults.filter(
+      obs => (obs.faves_count || 0) >= 2
+    );
+
+    const oneStar = allResults.filter(
+      obs => (obs.faves_count || 0) === 1
+    );
+
+    shuffle(twoStarsPlus);
+    shuffle(oneStar);
+
+    const selected = twoStarsPlus
+      .concat(oneStar)
+      .slice(0, 92);
+
+    selected.forEach(obs => {
+      const photoUrl = obs.photos[0].url.replace('square', 'large');
+      const obsLink = obs.uri;
+      const species = obs.species_guess || "Unknown species";
+      const location = obs.place_guess || "Unknown location";
+
+      const card = document.createElement('div');
+      card.className = 'inat-card';
+      card.innerHTML = `
+        <img src="${photoUrl}" alt="${species}">
+        <div class="inat-meta">
+          <strong>${species}</strong>
+          <span>${location}</span>
+        </div>
+      `;
+
+      card.onclick = () => window.open(obsLink, '_blank');
+      gallery.appendChild(card);
     });
   }
 
   loadINatObservations();
 </script>
+
+
+
