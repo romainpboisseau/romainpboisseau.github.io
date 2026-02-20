@@ -114,7 +114,7 @@ You can find more on
 
     let allResults = [];
 
-    for (let page = 1; page <= 4; page++) { // 4 × 30 = 120 → enough to pick 92
+    for (let page = 1; page <= 6; page++) { // 4 × 30 = 120 → enough to pick 92
       const response = await fetch(
         `https://api.inaturalist.org/v1/observations?user_id=romainpboisseau&order=desc&order_by=votes&per_page=30&page=${page}`
       );
@@ -172,6 +172,3 @@ You can find more on
 
   loadINatObservations();
 </script>
-
-
-
