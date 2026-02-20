@@ -114,7 +114,7 @@ You can find more on
 
     let allResults = [];
 
-    for (let page = 1; page <= 6; page++) { // 4 × 30 = 120 → enough to pick 92
+    for (let page = 1; page <= 6; page++) { // 6 × 30 = 180 → enough to pick 92
       const response = await fetch(
         `https://api.inaturalist.org/v1/observations?user_id=romainpboisseau&order=desc&order_by=votes&per_page=30&page=${page}`
       );
@@ -127,17 +127,19 @@ You can find more on
     allResults.forEach(obs => uniqueMap.set(obs.id, obs));
     allResults = Array.from(uniqueMap.values());
 
+    // Exclude specific observations
+    const excludeIds = [339221532, 299172558, 337810638, 300185375, 294141089,300880256];
+    allResults = allResults.filter(obs => !excludeIds.includes(obs.id));
 
     // Keep only observations with photos
     allResults = allResults.filter(
       obs => obs.photos && obs.photos.length > 0
     );
 
-    // Correct favorite count field
+    // Separate by favorites count for biased shuffle
     const twoStarsPlus = allResults.filter(
       obs => (obs.faves_count || 0) >= 2
     );
-
     const oneStar = allResults.filter(
       obs => (obs.faves_count || 0) === 1
     );
