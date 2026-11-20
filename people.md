@@ -32,7 +32,7 @@ permalink: /people/
       <h3 style="margin-top:0;">Romain Boisseau</h3>
       <p>
          I am currently a postdoctoral fellow in the Department of Ecology and Evolution at the University of Lausanne (Switzerland), advised by Tanja Schwander, with support from the SNSF Swiss Postdoctoral Fellowship. Before this, I completed my PhD at the University of Montana (USA) under the supervision of Doug Emlen. Prior to Montana, I studied biology at the École Normale Supérieure in Paris (France) and earned a master’s degree in Ecology, Biodiversity, and Evolution, which included several research projects around the world.<br>
-         <a href="{{ '/assets/pdfs/CV_RomainBoisseau_Nov2025.pdf' | relative_url }}" target="_blank" style="color:#f2a775; font-weight:bold;">CV</a>
+         <a href="{{ '/assets/pdfs/CV_RomainBoisseau_Nov2026.pdf' | relative_url }}" target="_blank" style="color:#f2a775; font-weight:bold;">CV</a>
       </p>
     </div>
 
