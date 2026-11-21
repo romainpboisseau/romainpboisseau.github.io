@@ -142,9 +142,23 @@ You can find more on
         (obs.faves || []).some(fave => fave.user && fave.user.login === INAT_USER)
     );
 
-    // Show 92 of them, picked at random on each visit
-    shuffle(myFaves);
-    const selected = myFaves.slice(0, 92);
+    // Rank by total number of faves (mine + other people's), most first.
+    // Shuffle within each rank, then keep the first 92: the most-faved
+    // photos always appear, and randomness only picks among the lowest rank that fits.
+    const ranks = new Map();
+    myFaves.forEach(obs => {
+      const count = obs.faves_count || 0;
+      if (!ranks.has(count)) ranks.set(count, []);
+      ranks.get(count).push(obs);
+    });
+    const selected = [...ranks.keys()]
+      .sort((a, b) => b - a)
+      .flatMap(count => {
+        const group = ranks.get(count);
+        shuffle(group);
+        return group;
+      })
+      .slice(0, 92);
 
     selected.forEach(obs => {
       const photoUrl = obs.photos[0].url.replace('square', 'large');
