@@ -129,7 +129,7 @@ permalink: /research/
 
   <div class="project-text" style="flex:2 1 400px;padding:1rem;text-align: justify;">
     <h2>Phasmatodata: the World Phasmid Trait Database</h2>
-    <p>Phasmids (stick and leaf insects) are a diverse group of herbivorous insects with remarkable morphological and behavioral diversity, making them an ideal system to address a wide range of eco-evolutionary questions. Understanding this diversity requires comprehensive data on species traits, yet such information is currently scattered across several centuries of publications in multiple languages. To address this, I am developing an open-access online database for archiving and accessing phasmid traits at a global scale. I hope to release it in 2026. 
+    <p>Phasmids (stick and leaf insects) are a diverse group of herbivorous insects with remarkable morphological and behavioral diversity, making them an ideal system to address a wide range of eco-evolutionary questions. Understanding this diversity requires comprehensive data on species traits, yet such information is currently scattered across several centuries of publications in multiple languages. To address this, I am developing an open-access online database for archiving and accessing phasmid traits at a global scale. I hope to release it in 2027. 
     </p>
   </div>
 </section>
