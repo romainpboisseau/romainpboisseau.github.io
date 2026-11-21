@@ -5,6 +5,24 @@ permalink: /publications/
 author_profile: true
 ---
 
+<h2>2026</h2>
+
+<ul class="pub-list">
+  <li>
+    <strong>Boisseau, R. P.</strong>, & Emlen, D. J. (2026).
+    <a href="https://doi.org/10.1093/evolut/qpag079" target="_blank">
+      <em>Exaggerated male hindlegs function as pure weapons of male–male combat in thorny devil stick insects.</em>
+    </a> <em>Evolution, 80</em>(7), 1501–1517.
+  </li>
+
+  <li>
+    Miller, C. W., Cram, D., Lane, S. M., <strong>Boisseau, R. P.</strong>, Fitzgerald, S., Lopez, N., Moore, A. J., Painting, C. J., Palaoro, A. V., Ryan, M., Somjee, U., Thomas-Bulle, C., Emlen, D. J., & Labonte, D. (2026).
+    <a href="https://www.cell.com/trends/ecology-evolution/fulltext/S0169-5347(26)00054-6" target="_blank">
+      <em>Toward an integrated understanding of animal weapons.</em>
+    </a> <em>Trends in Ecology & Evolution, 41</em>(6), 504–513.
+  </li>
+</ul>
+
 <h2>2025</h2>
 
 <ul class="pub-list">
@@ -14,16 +32,6 @@ author_profile: true
       <em>Sexual selection and flight as predictors of sexual size and shape dimorphism in stick and leaf insects.</em>
     </a> <em>bioRxiv</em>.
     <a href="{{ '/assets/pdfs/Boisseau et al. - 2025 - Sexual selection and flight as predictors of sexua.pdf' | relative_url }}" target="_blank" rel="noopener">
-    <i class="fas fa-file-pdf" aria-hidden="true"></i>
-    </a>
-  </li>
-
-  <li>
-    <strong>Boisseau, R. P.</strong>, & Emlen, D. J. (2025).
-    <a href="https://www.biorxiv.org/content/10.1101/2025.11.21.689692v1" target="_blank">
-      <em>Exaggerated male hindlegs function as pure weapons of male–male combat in thorny devil stick insects.</em>
-    </a> <em>bioRxiv</em>.
-    <a href="{{ '/assets/pdfs/Boisseau et Emlen - 2025 - Exaggerated male hindlegs function as pure weapons.pdf' | relative_url }}" target="_blank" rel="noopener">
     <i class="fas fa-file-pdf" aria-hidden="true"></i>
     </a>
   </li>
