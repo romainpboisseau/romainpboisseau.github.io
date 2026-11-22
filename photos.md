@@ -106,7 +106,6 @@ You can find more on
   Photos by <a href="https://www.inaturalist.org/people/romainpboisseau" target="_blank">romainpboisseau</a> on iNaturalist
 </p>
 
-<script src="https://cdn.jsdelivr.net/npm/smartcrop@2.0.5/smartcrop.js"></script>
 <script>
   function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -114,6 +113,14 @@ You can find more on
       [array[i], array[j]] = [array[j], array[i]];
     }
   }
+
+  // Manual crop for specific vertical photos: observation ID → how far
+  // down to crop (0 = very top, 50 = centre, 100 = bottom). The ID is the
+  // number at the end of the photo's iNaturalist link. Photos not listed
+  // here use the default (20%, set in the style section above).
+  const cropOverrides = {
+    // 123456789: 5,
+  };
 
   async function loadINatObservations() {
     const gallery = document.getElementById('inat-gallery');
@@ -167,8 +174,6 @@ You can find more on
       })
       .slice(0, 92);
 
-    const cropQueue = [];
-
     selected.forEach(obs => {
       const photoUrl = obs.photos[0].url.replace('square', 'large');
       const obsLink = obs.uri;
@@ -189,48 +194,15 @@ You can find more on
       img.onload = () => {
         if (img.naturalHeight > img.naturalWidth) img.classList.add('portrait');
       };
+      if (cropOverrides[obs.id] !== undefined) {
+        img.style.objectPosition = `50% ${cropOverrides[obs.id]}%`;
+      }
 
       card.onclick = () => window.open(obsLink, '_blank');
       gallery.appendChild(card);
-      // Only vertical photos get content-aware cropping. Skip photos that
-      // iNaturalist already tells us are horizontal or square.
-      const dims = obs.photos[0].original_dimensions;
-      if (!dims || dims.height > dims.width) {
-        cropQueue.push({ img, smallUrl: obs.photos[0].url.replace('square', 'small') });
-      }
     });
-
-    smartCropAll(cropQueue);
   }
 
-  // Content-aware cropping with smartcrop.js, for vertical photos only: it looks for the most
-  // interesting part of each photo (detail, skin tones, saturation) and
-  // centers the crop on it. It works on a small copy of each photo, one at
-  // a time, after the gallery is shown. If anything fails (library not
-  // loaded, photo host blocks it), the photo keeps the default crop.
-  async function smartCropAll(items) {
-    if (!window.smartcrop) return;
-    for (const { img, smallUrl } of items) {
-      try {
-        const probe = new Image();
-        probe.crossOrigin = 'anonymous';
-        probe.src = smallUrl;
-        await probe.decode();
-        if (probe.naturalHeight <= probe.naturalWidth) continue; // not vertical
-        const box = img.getBoundingClientRect();
-        if (!box.width || !box.height) continue;
-        const { topCrop } = await smartcrop.crop(probe, { width: box.width, height: box.height });
-        const freeY = probe.naturalHeight - topCrop.height;
-        if (freeY > 1) {
-          const posY = (topCrop.y / freeY) * 100;
-          img.style.objectPosition = `50% ${posY.toFixed(1)}%`;
-        }
-      } catch (e) {
-        // keep the default crop
-      }
-      await new Promise(resolve => setTimeout(resolve, 0)); // keep the page responsive
-    }
-  }
 
   loadINatObservations();
 </script>
