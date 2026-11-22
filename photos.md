@@ -64,6 +64,12 @@ You can find more on
     display: block;
   }
 
+  /* Vertical photos: crop toward the top instead of the center.
+     0% = very top, 50% = center. */
+  .inat-card img.portrait {
+    object-position: center 20%;
+  }
+
   .inat-meta {
     position: absolute;
     bottom: 0;
@@ -175,6 +181,11 @@ You can find more on
           <span>${location}</span>
         </div>
       `;
+
+      const img = card.querySelector('img');
+      img.onload = () => {
+        if (img.naturalHeight > img.naturalWidth) img.classList.add('portrait');
+      };
 
       card.onclick = () => window.open(obsLink, '_blank');
       gallery.appendChild(card);
