@@ -99,7 +99,7 @@ You can find more on
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 0; /* if a photo is trimmed, trim the bottom */
+    object-position: 50% 50%; /* if a photo is trimmed, trim top and bottom equally */
     display: block;
   }
 
