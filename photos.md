@@ -37,11 +37,28 @@ You can find more on
 
 
 <style>
+  /* Justified rows: every photo keeps its own shape (no cropping) and
+     each row is stretched to the full width, so photos in a row share
+     the same height. --row-height is the target height of a row. */
   .inat-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 15px;
+    --row-height: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
     margin-top: 3rem;
+  }
+
+  /* Stops the last, incomplete row from being stretched. */
+  .inat-gallery::after {
+    content: '';
+    flex-grow: 999999;
+  }
+
+  @media (max-width: 600px) {
+    .inat-gallery {
+      --row-height: 150px;
+      gap: 8px;
+    }
   }
 
   .inat-card {
@@ -57,17 +74,24 @@ You can find more on
     transform: scale(1.03);
   }
 
-  .inat-card img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    display: block;
+  .inat-card {
+    flex-grow: var(--ratio);
+    width: calc(var(--ratio) * var(--row-height));
   }
 
-  /* Vertical photos: crop toward the top instead of the center.
-     0% = very top, 50% = center. */
-  .inat-card img.portrait {
-    object-position: center 20%;
+  /* Reserves the photo's exact shape before it loads, so nothing jumps. */
+  .inat-card .inat-spacer {
+    display: block;
+    padding-bottom: calc(100% / var(--ratio));
+  }
+
+  .inat-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   .inat-meta {
@@ -113,14 +137,6 @@ You can find more on
       [array[i], array[j]] = [array[j], array[i]];
     }
   }
-
-  // Manual crop for specific vertical photos: observation ID → how far
-  // down to crop (0 = very top, 50 = centre, 100 = bottom). The ID is the
-  // number at the end of the photo's iNaturalist link. Photos not listed
-  // here use the default (20%, set in the style section above).
-  const cropOverrides = {
-    // 123456789: 5,
-  };
 
   async function loadINatObservations() {
     const gallery = document.getElementById('inat-gallery');
@@ -182,20 +198,26 @@ You can find more on
 
       const card = document.createElement('div');
       card.className = 'inat-card';
+      // Width ÷ height of the photo, from iNaturalist (1.5 if unknown).
+      const dims = obs.photos[0].original_dimensions;
+      const ratio = dims && dims.width && dims.height ? dims.width / dims.height : 1.5;
+      card.style.setProperty('--ratio', ratio.toFixed(4));
+
       card.innerHTML = `
-        <img src="${photoUrl}" alt="${species}">
+        <i class="inat-spacer"></i>
+        <img src="${photoUrl}" alt="${species}" loading="lazy">
         <div class="inat-meta">
           <strong>${species}</strong>
           <span>${location}</span>
         </div>
       `;
 
-      const img = card.querySelector('img');
-      img.onload = () => {
-        if (img.naturalHeight > img.naturalWidth) img.classList.add('portrait');
-      };
-      if (cropOverrides[obs.id] !== undefined) {
-        img.style.objectPosition = `50% ${cropOverrides[obs.id]}%`;
+      // If iNaturalist didn't give the size, use the real one once loaded.
+      if (!(dims && dims.width && dims.height)) {
+        const img = card.querySelector('img');
+        img.onload = () => {
+          card.style.setProperty('--ratio', (img.naturalWidth / img.naturalHeight).toFixed(4));
+        };
       }
 
       card.onclick = () => window.open(obsLink, '_blank');
