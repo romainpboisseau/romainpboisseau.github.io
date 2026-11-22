@@ -48,10 +48,18 @@ You can find more on
     margin-top: 3rem;
   }
 
-  /* Stops the last, incomplete row from being stretched. */
+  /* Stops the last, incomplete row from being stretched while the
+     script measures the rows. Removed once the gallery is trimmed so the
+     last row ends exactly at the right edge. */
   .inat-gallery::after {
     content: '';
     flex-grow: 999999;
+  }
+  .inat-gallery.trimmed::after {
+    display: none;
+  }
+  .inat-card.hidden {
+    display: none;
   }
 
   @media (max-width: 600px) {
@@ -91,6 +99,7 @@ You can find more on
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 50% 0; /* if a photo is trimmed, trim the bottom */
     display: block;
   }
 
@@ -188,7 +197,7 @@ You can find more on
         shuffle(group);
         return group;
       })
-      .slice(0, 92);
+      .slice(0, 130); // a few extra, so the last row can be completed
 
     selected.forEach(obs => {
       const photoUrl = obs.photos[0].url.replace('square', 'large');
@@ -201,7 +210,7 @@ You can find more on
       // Width ÷ height of the photo, from iNaturalist (1.5 if unknown).
       const dims = obs.photos[0].original_dimensions;
       const ratio = dims && dims.width && dims.height ? dims.width / dims.height : 1.5;
-      card.style.setProperty('--ratio', ratio.toFixed(4));
+      card.style.setProperty('--ratio', displayRatio(ratio));
 
       card.innerHTML = `
         <i class="inat-spacer"></i>
@@ -216,14 +225,61 @@ You can find more on
       if (!(dims && dims.width && dims.height)) {
         const img = card.querySelector('img');
         img.onload = () => {
-          card.style.setProperty('--ratio', (img.naturalWidth / img.naturalHeight).toFixed(4));
+          card.style.setProperty('--ratio', displayRatio(img.naturalWidth / img.naturalHeight));
+          trimToFullRows();
         };
       }
 
       card.onclick = () => window.open(obsLink, '_blank');
       gallery.appendChild(card);
     });
+
+    trimToFullRows();
   }
+
+  // Vertical photos are shown no narrower than 4:5 (width:height), so
+  // taller ones lose a little at the bottom and appear larger.
+  const MIN_RATIO = 0.8;
+  function displayRatio(ratio) {
+    return Math.max(ratio, MIN_RATIO).toFixed(4);
+  }
+
+  // Show about 92 photos, ending on a complete row so the last row fills
+  // the page width. Recomputed when the window is resized.
+  const TARGET_COUNT = 92;
+  function trimToFullRows() {
+    const gallery = document.getElementById('inat-gallery');
+    const cards = [...gallery.querySelectorAll('.inat-card')];
+    if (!cards.length) return;
+
+    // Lay out every candidate photo, with the last row left ragged.
+    gallery.classList.remove('trimmed');
+    cards.forEach(card => card.classList.remove('hidden'));
+
+    // Group photos into rows by their vertical position.
+    const rowEnds = []; // number of photos up to the end of each row
+    let lastTop = null;
+    cards.forEach((card, i) => {
+      const top = card.offsetTop;
+      if (lastTop !== null && top !== lastTop) rowEnds.push(i);
+      lastTop = top;
+    });
+    // rowEnds only holds complete rows: the final, ragged row is never in it.
+
+    if (rowEnds.length) {
+      // Pick the complete row whose end is closest to the target.
+      const keep = rowEnds.reduce((best, n) =>
+        Math.abs(n - TARGET_COUNT) < Math.abs(best - TARGET_COUNT) ? n : best);
+      cards.forEach((card, i) => card.classList.toggle('hidden', i >= keep));
+      gallery.classList.add('trimmed');
+    }
+  }
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(trimToFullRows, 150);
+  });
 
 
   loadINatObservations();
